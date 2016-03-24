@@ -9,7 +9,7 @@ namespace UglyTrivia
     {
 
 
-        List<string> players = new List<string>();
+        List<Player> players = new List<Player>();
 
         int[] places = new int[6];
         int[] purses = new int[6];
@@ -45,11 +45,10 @@ namespace UglyTrivia
             return (howManyPlayers() >= 2);
         }
 
-        public bool add(String playerName)
+        public bool add(string playerName)
         {
-
-
-            players.Add(playerName);
+            Player player = new Player(playerName);
+            players.Add(player);
             places[howManyPlayers()] = 0;
             purses[howManyPlayers()] = 0;
             inPenaltyBox[howManyPlayers()] = false;

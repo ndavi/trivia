@@ -24,7 +24,7 @@ namespace Trivia
                 aGame.add("Pat");
                 aGame.add("Sue");
 
-                Random rand = new Random(10);
+                Random rand = new Random(i);
 
                 do
                 {

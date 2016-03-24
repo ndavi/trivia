@@ -2,7 +2,7 @@
 
 public class Player
 {
-    private string name;
+    public string name;
 
     public Player(string nom)
     {

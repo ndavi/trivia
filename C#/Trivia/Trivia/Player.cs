@@ -9,6 +9,8 @@ public class Player
 
     public int Places = 0;
 
+    public bool PenalityBox = false;
+
     public Player(string nom)
     {
         Name = nom;

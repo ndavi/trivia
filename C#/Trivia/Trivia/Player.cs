@@ -2,10 +2,17 @@
 
 public class Player
 {
-    public string name;
+    public string Name { get; private set; }
+
+    public int Purses { get; private set; }
 
     public Player(string nom)
     {
-        this.name = nom;
+        this.Name = nom;
+    }
+
+    public void WinOnePurse()
+    {
+        this.Purses++;
     }
 }

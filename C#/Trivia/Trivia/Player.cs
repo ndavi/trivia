@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 public class Player
 {
@@ -6,9 +7,11 @@ public class Player
 
     public int Purses { get; private set; }
 
+    public int Places = 0;
+
     public Player(string nom)
     {
-        this.Name = nom;
+        Name = nom;
     }
 
     public void WinOnePurse()
